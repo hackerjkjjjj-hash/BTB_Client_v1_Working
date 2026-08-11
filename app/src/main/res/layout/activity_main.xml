@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_dark"
+    android:gravity="center"
+    android:padding="28dp">
+
+    <ImageView
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:src="@drawable/ic_bubble"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@color/purple"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Companion App សម្រាប់ Minecraft Bedrock"
+        android:textColor="@color/text_muted"
+        android:textSize="13sp"
+        android:layout_marginBottom="28dp"/>
+
+    <TextView
+        android:id="@+id/statusText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/permission_needed"
+        android:textColor="@color/amber"
+        android:textSize="13sp"
+        android:gravity="center"
+        android:padding="12dp"
+        android:background="@drawable/rounded_panel"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnGrantPermission"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:text="@string/permission_grant"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/blue"
+        android:textColor="@color/white"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/btnStartOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:text="@string/btn_enable_overlay"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/purple"
+        android:textColor="@color/white"
+        android:enabled="false"/>
+
+    <Button
+        android:id="@+id/btnStopOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:text="@string/btn_stop_overlay"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/panel"
+        android:textColor="@color/text_muted"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>

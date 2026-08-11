@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#E90B0D12"
+    android:padding="14dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingBottom="10dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BTB CLIENT"
+                    android:textColor="#A879FF"
+                    android:textStyle="bold"
+                    android:textSize="21sp"/>
+
+                <TextView
+                    android:id="@+id/bedrockStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bedrock bridge: waiting"
+                    android:textColor="#9EA3B0"
+                    android:textSize="11sp"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/closeBtn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="×"
+                android:textColor="#FFFFFF"
+                android:textSize="26sp"
+                android:background="#302B3040"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PLAYER INFO"
+            android:textColor="#8F72FF"
+            android:textStyle="bold"
+            android:textSize="13sp"
+            android:paddingBottom="6dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#A51A1D26"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/playerName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Player"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/playerCoords"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Coordinates: waiting for Bedrock data"
+                android:textColor="#BFC3CF"
+                android:textSize="12sp"
+                android:paddingTop="4dp"/>
+
+            <TextView
+                android:id="@+id/playerDimension"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dimension: —"
+                android:textColor="#BFC3CF"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/worldName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="World: —"
+                android:textColor="#BFC3CF"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MAIN MENU"
+            android:textColor="#8F72FF"
+            android:textStyle="bold"
+            android:textSize="13sp"
+            android:paddingTop="14dp"
+            android:paddingBottom="7dp"/>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:useDefaultMargins="false">
+
+            <Button
+                android:id="@+id/btnGui"
+                android:layout_width="0dp"
+                android:layout_height="92dp"
+                android:layout_columnWeight="1"
+                android:text="GUI\nCustomize UI"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/btnMap"
+                android:layout_width="0dp"
+                android:layout_height="92dp"
+                android:layout_columnWeight="1"
+                android:text="MAP\nWaypoints"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/btnAsd"
+                android:layout_width="0dp"
+                android:layout_height="92dp"
+                android:layout_columnWeight="1"
+                android:text="ASD BUTTON\nTouch layout"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/btnF5"
+                android:layout_width="0dp"
+                android:layout_height="92dp"
+                android:layout_columnWeight="1"
+                android:text="F5\nPerspective"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/btnControls"
+                android:layout_width="0dp"
+                android:layout_height="82dp"
+                android:layout_columnWeight="1"
+                android:text="CONTROLS"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/btnScreenshot"
+                android:layout_width="0dp"
+                android:layout_height="82dp"
+                android:layout_columnWeight="1"
+                android:text="SCREENSHOT"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/btnSettings"
+                android:layout_width="0dp"
+                android:layout_height="82dp"
+                android:layout_columnWeight="1"
+                android:text="SETTINGS"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/btnAbout"
+                android:layout_width="0dp"
+                android:layout_height="82dp"
+                android:layout_columnWeight="1"
+                android:text="ABOUT"
+                android:textAllCaps="false"/>
+        </GridLayout>
+
+        <TextView
+            android:id="@+id/bridgeInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BEDROCK DATA BRIDGE\nInstall/enable the BTB Bedrock pack to provide supported in-game data. This app does not scan Minecraft memory."
+            android:textColor="#AEB3C1"
+            android:textSize="11sp"
+            android:background="#A5161820"
+            android:padding="12dp"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+</ScrollView>

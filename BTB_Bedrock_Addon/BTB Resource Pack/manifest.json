@@ -1,0 +1,29 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "BTB Client Resource Pack",
+    "description": "BTB Client Bedrock UI resources",
+    "uuid": "c6d9f7b5-4b20-410c-a530-37fd6032c122",
+    "version": [
+      1,
+      0,
+      0
+    ],
+    "min_engine_version": [
+      1,
+      20,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "type": "resources",
+      "uuid": "aa5fc960-ac71-4ca8-9510-cb9796e23c63",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    }
+  ]
+}

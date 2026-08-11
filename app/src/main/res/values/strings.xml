@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">BTB Client</string>
+    <string name="btn_enable_overlay">បើកកម្មវិធីអណ្តែត (Floating Button)</string>
+    <string name="btn_stop_overlay">បិទកម្មវិធីអណ្តែត</string>
+    <string name="permission_needed">ត្រូវការ Permission "Display over other apps" សិន</string>
+    <string name="permission_grant">ទៅកាន់ការកំណត់ (Settings)</string>
+    <string name="tab_map">Map</string>
+    <string name="tab_tasks">Tasks</string>
+    <string name="tab_gallery">Gallery</string>
+    <string name="add">បន្ថែម</string>
+    <string name="waypoint_hint">ឈ្មោះទីតាំង (ឧ. Base, Diamond Mine)</string>
+    <string name="coords_hint">Coordinates (ឧ. X:120 Y:65 Z:-40)</string>
+    <string name="task_hint">សរសេរគោលដៅថ្មី...</string>
+    <string name="notif_channel_name">BTB Client Overlay</string>
+    <string name="notif_title">BTB Client កំពុងដំណើរការ</string>
+    <string name="notif_text">ចុចប៊ូតុងអណ្តែតដើម្បីបើក menu</string>
+</resources>

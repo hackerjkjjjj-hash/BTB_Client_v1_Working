@@ -1,0 +1,11 @@
+{
+  "type": "player_state",
+  "name": "Player",
+  "dimension": "overworld",
+  "x": 0,
+  "y": 64,
+  "z": 0,
+  "gamemode": "survival",
+  "world": "My World",
+  "timestamp": 0
+}

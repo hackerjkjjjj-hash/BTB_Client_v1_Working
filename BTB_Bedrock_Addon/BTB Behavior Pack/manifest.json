@@ -1,0 +1,31 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "BTB Client Behavior Pack",
+    "description": "BTB Client supported Bedrock utilities",
+    "uuid": "af3bfeb4-0d4a-4b80-b4dd-b2d87070d014",
+    "version": [
+      1,
+      0,
+      0
+    ],
+    "min_engine_version": [
+      1,
+      20,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "type": "script",
+      "language": "javascript",
+      "entry": "scripts/main.js",
+      "uuid": "be6c75f8-5bc0-443d-bc19-e823c98b393c",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    }
+  ]
+}
