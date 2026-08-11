@@ -53,8 +53,8 @@ class OverlayService : Service() {
     }
 
     private fun showBubble() {
-        val v=layoutInflater.inflate(R.layout.overlay_bubble,null)
-        val p=WindowManager.LayoutParams(
+        val v = LayoutInflater.from(this).inflate(R.layout.overlay_bubble, null)
+        val p = WindowManager.LayoutParams(
             WindowManager.LayoutParams.WRAP_CONTENT,
             WindowManager.LayoutParams.WRAP_CONTENT,
             overlayType(),
@@ -65,16 +65,18 @@ class OverlayService : Service() {
         p.x=12; p.y=280
 
         var sx=0; var sy=0; var dx=0f; var dy=0f; var moved=false
-        v.setOnTouchListener { _,e ->
+        v.setOnTouchListener { _, e ->
             when(e.actionMasked){
                 MotionEvent.ACTION_DOWN -> {
                     sx=p.x; sy=p.y; dx=e.rawX; dy=e.rawY; moved=false; true
                 }
                 MotionEvent.ACTION_MOVE -> {
-                    val mx=(e.rawX-dx).toInt(); val my=(e.rawY-dy).toInt()
-                    if(kotlin.math.abs(mx)>6 || kotlin.math.abs(my)>6) moved=true
-                    p.x=sx+mx; p.y=sy+my
-                    runCatching { wm.updateViewLayout(v,p) }; true
+                    val mx = (e.rawX - dx).toInt()
+                    val my = (e.rawY - dy).toInt()
+                    if (kotlin.math.abs(mx) > 6 || kotlin.math.abs(my) > 6) moved = true
+                    p.x = sx + mx
+                    p.y = sy + my
+                    runCatching { wm.updateViewLayout(v, p) }; true
                 }
                 MotionEvent.ACTION_UP -> {
                     if(!moved) openDashboard()
